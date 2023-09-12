@@ -1,3 +1,4 @@
+import CourseHeader from "../Components/CourseHeader"
 import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar"
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
         <Navbar />
         <Hero />
+        <CourseHeader />
     </>
   )
 }
