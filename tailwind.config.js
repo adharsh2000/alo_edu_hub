@@ -12,7 +12,7 @@ export default {
       boxShadow:{
         'app-shadow':'0px 4px 25px 0px rgba(0, 0, 0, 0.10)',
         'card-shadow':'0px 4px 88px 0px rgba(0, 0, 0, 0.05)'
-      }
+      },
     },
   },
   plugins: [],
