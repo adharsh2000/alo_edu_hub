@@ -3,6 +3,7 @@ import AboutBottomBanner from "../Components/About/AboutBottomBanner"
 import AboutSectionOne from "../Components/About/AboutSectionOne"
 import AboutSectionThree from "../Components/About/AboutSectionThree"
 import AboutSectionTwo from "../Components/About/AboutSectionTwo"
+import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
 const About = () => {
@@ -14,6 +15,7 @@ const About = () => {
         <AboutSectionTwo />
         <AboutSectionThree />
         <AboutBottomBanner />
+        <Footer />
     </>
   )
 }

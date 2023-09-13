@@ -3,7 +3,7 @@ import BannerImg from "../../assets/Aboutbanner.svg";
 const AboutBanner = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${BannerImg})` }}
+      style={{ backgroundImage: `url(${BannerImg})`}}
       className="bg-no-repeat h-[400px] flex flex-col items-center justify-center gap-2"
     >
       <h2 className="font-bold text-white text-5xl">

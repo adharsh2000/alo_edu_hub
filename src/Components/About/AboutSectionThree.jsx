@@ -13,7 +13,7 @@ const AboutSectionThree = () => {
           <span className="text-app-color"> Lifetime of Success.</span>
         </h2>
         <p className="text-center mt-5 text-gray-500 text-sm">
-          Lorem Ipsum has been the industry's standard dummy text ever since the{" "}
+          Lorem Ipsum has been the industrys standard dummy text ever since the{" "}
           <br />
           when an unknown printer took a galley of type and scrambled it to make
         </p>
@@ -23,7 +23,7 @@ const AboutSectionThree = () => {
           <img src={img1} alt="logo" className="bg-app-color p-5 rounded-lg" />
           <h2 className="font-bold text-lg">Innovation</h2>
           <p className="text-center text-gray-500 text-sm">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industrys standard dummy text ever since
             the when an unknown printer took a galley of type and scrambled it
             to make
           </p>
@@ -32,7 +32,7 @@ const AboutSectionThree = () => {
           <img src={img2} alt="logo" className="bg-app-color p-5 rounded-lg" />
           <h2 className="font-bold text-lg">Excellence</h2>
           <p className="text-center text-gray-500 text-sm">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industrys standard dummy text ever since
             the when an unknown printer took a galley of type and scrambled it
             to make
           </p>
@@ -41,7 +41,7 @@ const AboutSectionThree = () => {
           <img src={img3} alt="logo" className="bg-app-color p-5 rounded-lg" />
           <h2 className="font-bold text-lg">Responsibility</h2>
           <p className="text-center text-gray-500 text-sm">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industrys standard dummy text ever since
             the when an unknown printer took a galley of type and scrambled it
             to make
           </p>
