@@ -1,6 +1,7 @@
 {
   "name": "alo_education_hub",
   "private": true,
+  "author": "Adharsh.M.R",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

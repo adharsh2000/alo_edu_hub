@@ -8,7 +8,7 @@ const AboutSectionOne = () => {
     <div className="flex flex-col items-center justify-center relative mb-5 mt-3">
       <div>
         <h2 className="font-bold text-3xl text-center mb-5">What we do</h2>
-        <p className="text-gray-500 mx-auto w-[55%] text-center">
+        <p className="text-gray-500 mx-auto w-[55%] text-center text-sm">
           Lorem Ipsum has been the industry's standard dummy text ever since the
           when an unknown printer took a galley of type and scrambled it to make
         </p>
