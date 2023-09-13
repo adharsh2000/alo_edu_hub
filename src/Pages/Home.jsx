@@ -3,69 +3,34 @@ import CourseCard from "../Components/CourseCard";
 import CourseHeader from "../Components/CourseHeader";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
-import GraphicDesign from "../assets/C1.svg";
 import ExpPremium from "../Components/ExpPremium";
+import { courseCardData } from "../data/courseCardData";
+import StudentCardSection from "../Components/StudentCardSection";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      {/* <Fade bottom> */}
-        <Hero />
-      {/* </Fade> */}
+      <Hero />
       <Fade bottom>
         <CourseHeader />
       </Fade>
       <div className="container mb-10 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
-          <CourseCard
-            Heading={"Graphic Design"}
-            content={"Photoshop,illustrator,indesign"}
-            img={GraphicDesign}
-          />
+          {courseCardData.map((item) => (
+            <CourseCard
+              key={item.id}
+              Heading={item.courseName}
+              content={item.courseDesc}
+              img={item.courseImage}
+            />
+          ))}
         </div>
       </div>
       <ExpPremium />
+      <StudentCardSection />
+      <Footer />
     </>
   );
 };

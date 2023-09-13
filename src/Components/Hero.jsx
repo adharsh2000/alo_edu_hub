@@ -1,8 +1,9 @@
 import CircularOne from "../assets/CircularOne.svg";
 import HeroImg from "../assets/HeroImg.svg";
-import BookIcon from "../assets/Book.svg"
-import Clock from "../assets/Clock.svg"
-import Avatars from "../assets/Avatars.svg"
+import BookIcon from "../assets/Book.svg";
+import Clock from "../assets/Clock.svg";
+import Avatars from "../assets/Avatars.svg";
+import { Fade } from "react-reveal";
 
 const Hero = () => {
   return (
@@ -34,9 +35,11 @@ const Hero = () => {
             Get Started
           </button>
         </div>
-        <div>
-          <img src={HeroImg} alt="hero/img" className="mt-10" />
-        </div>
+        <Fade bottom>
+          <div>
+            <img src={HeroImg} alt="hero/img" className="mt-10" />
+          </div>
+        </Fade>
       </main>
       <div className="bg-app-color w-[90%] mx-auto p-4 rounded-lg flex justify-between gap-4">
         <div className="flex flex-col justify-between">
@@ -47,16 +50,22 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col items-center justify-between">
-            <img src={BookIcon} alt="book" />
-            <p className="text-white text-sm">Practical experience with a live project.</p>
+          <img src={BookIcon} alt="book" />
+          <p className="text-white text-sm">
+            Practical experience with a live project.
+          </p>
         </div>
         <div className="flex flex-col items-center justify-between">
-        <img src={Clock} alt="clock" />
-            <p className="text-white text-sm">Flexible timings to suit the needs of the students.</p>
+          <img src={Clock} alt="clock" />
+          <p className="text-white text-sm">
+            Flexible timings to suit the needs of the students.
+          </p>
         </div>
         <div className="flex flex-col items-center justify-between">
-        <img src={Avatars} alt="avatar" />
-            <p className="text-white text-sm">Training provided by well-experienced trainers.</p>
+          <img src={Avatars} alt="avatar" />
+          <p className="text-white text-sm">
+            Training provided by well-experienced trainers.
+          </p>
         </div>
       </div>
     </div>
