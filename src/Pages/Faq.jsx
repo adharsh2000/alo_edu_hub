@@ -1,5 +1,4 @@
 import FaqAccordion from "../Components/Faq/FaqAccordian"
-import FaqAccordian from "../Components/Faq/FaqAccordian"
 import FaqBanner from "../Components/Faq/FaqBanner"
 import FaqSectionOne from "../Components/Faq/FaqSectionOne"
 import Footer from "../Components/Footer"
