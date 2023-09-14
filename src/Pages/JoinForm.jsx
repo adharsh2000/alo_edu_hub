@@ -12,7 +12,7 @@ const JoinForm = () => {
         <p className="text-gray-500">
           Have any questions? We’re here to assist you.
         </p>
-        <form action="" className="p-4 mx-auto">
+        <form action="" className="p-4 mx-auto w-full">
           <div className="mb-4">
             <label htmlFor="name" className="block mb-2">
               Name

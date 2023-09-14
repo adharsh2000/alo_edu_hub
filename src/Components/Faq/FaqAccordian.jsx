@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Fade } from "react-reveal";
 /* import react-icons */
 import { BiChevronDown } from "react-icons/bi";
 
@@ -11,6 +11,8 @@ const FaqAccordion = ({ question, answer }) => {
 
   return (
     <div className="focus:border focus:border-app-color">
+      <Fade bottom>
+
       {/* question section */}
       <div
         onClick={() => setShow(!show)}
@@ -38,6 +40,7 @@ const FaqAccordion = ({ question, answer }) => {
           </motion.div>
         )}
       </AnimatePresence>
+      </Fade>
     </div>
   );
 };

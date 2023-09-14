@@ -2,10 +2,13 @@ import Arrow from "../../assets/CurleyArrow.svg";
 import img1 from "../../assets/AboutS11.svg";
 import img2 from "../../assets/AboutS12.svg";
 import img3 from "../../assets/AboutS13.svg";
+import { Fade } from "react-reveal";
 
 const AboutSectionOne = () => {
   return (
     <div className="flex flex-col items-center justify-center relative mb-5 mt-3">
+      <Fade bottom>
+
       <div>
         <h2 className="font-bold text-3xl text-center mb-5">What we do</h2>
         <p className="text-gray-500 mx-auto w-[55%] text-center">
@@ -13,6 +16,7 @@ const AboutSectionOne = () => {
           when an unknown printer took a galley of type and scrambled it to make
         </p>
       </div>
+      </Fade>
       <img
         src={Arrow}
         alt="arrow"
@@ -20,6 +24,7 @@ const AboutSectionOne = () => {
       />
       <div className="flex justify-center mt-7">
         <div className="flex flex-col items-center md:flex-row md:w-[80%] md:justify-center gap-10">
+      <Fade bottom>
           <div className="w-80">
             <img src={img1} alt="person" className="mb-3 w-[380px]" />
             <div className="flex">
@@ -42,9 +47,11 @@ const AboutSectionOne = () => {
               erat.
             </p>
           </div>
+      </Fade>
         </div>
       </div>
         <div className="bg-app-color flex w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
+          <Fade bottom>
             <div className="flex flex-col items-center">
                 <h2 className="font-bold text-white text-4xl">10+</h2>
                 <p className="text-white">Courses</p>
@@ -61,6 +68,7 @@ const AboutSectionOne = () => {
                 <h2 className="font-bold text-white text-4xl">10+</h2>
                 <p className="text-white">Courses</p>
             </div>
+          </Fade>
         </div>
     </div>
   );

@@ -4,10 +4,11 @@ import FaqSectionOne from "../Components/Faq/FaqSectionOne"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 import { accordions } from "../data/accordian"
+import Layout from "./Layout"
 
 const Faq = () => {
   return (
-    <>
+    <Layout>
     <Navbar />
     <FaqBanner />
     <FaqSectionOne />
@@ -27,7 +28,7 @@ const Faq = () => {
       </div>
     </div>
     <Footer />
-    </>
+    </Layout>
   )
 }
 

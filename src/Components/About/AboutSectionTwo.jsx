@@ -1,15 +1,20 @@
 import img1 from "../../assets/AboutS21.svg"
+import { Fade } from "react-reveal";
 
 const AboutSectionTwo = () => {
   return (
     <div className="flex flex-col items-center justify-center mb-5 mt-8">
       <div>
+        <Fade bottom>
         <h2 className="font-bold text-3xl text-center mb-5">Our MIssion</h2>
         <p className="text-gray-500 mx-auto text-center ">
           Lorem Ipsum is simply dummy text of the printing.
         </p>
+        </Fade>
       </div>
       <div className="w-[80%] flex flex-col md:flex-row md:justify-center gap-10 mt-9 mx-auto">
+        <Fade bottom>
+
         <div className="md:w-[50%] flex flex-col items-center justify-center">
           <p className="text-center md:text-start mb-6 text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -27,6 +32,7 @@ const AboutSectionTwo = () => {
         <div className="flex items-center justify-center">
             <img src={img1} alt="img" className="w-80" />
         </div>
+        </Fade>
       </div>
     </div>
   );

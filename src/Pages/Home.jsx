@@ -7,10 +7,11 @@ import ExpPremium from "../Components/ExpPremium";
 import { courseCardData } from "../data/courseCardData";
 import StudentCardSection from "../Components/StudentCardSection";
 import Footer from "../Components/Footer";
+import Layout from "./Layout";
 
 const Home = () => {
   return (
-    <>
+    <Layout>
       <Navbar />
       <Hero />
       <Fade bottom>
@@ -31,7 +32,7 @@ const Home = () => {
       <ExpPremium />
       <StudentCardSection />
       <Footer />
-    </>
+    </Layout>
   );
 };
 

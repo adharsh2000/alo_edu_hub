@@ -24,12 +24,12 @@ const ExpPremium = () => {
         </div>
       </Fade>
       <Fade bottom>
-      <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-20">
-        <img src={ExpIcon} alt="exp" className="w-[300px]" />
+      <div className="flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-20">
+        <img src={ExpIcon} alt="exp" className="w-[400px]" />
         <div className="flex flex-col justify-around gap-4 md:gap-8">
           <div className="">
-            <h2 className="font-bold text-3xl text-center md:text-start">Premium Learning</h2>
-            <h2 className="text-app-color font-bold text-3xl text-center md:text-start">Experience</h2>
+            <h2 className="font-bold text-5xl text-center md:text-start">Premium Learning</h2>
+            <h2 className="text-app-color font-bold text-5xl text-center md:text-start">Experience</h2>
           </div>
           <div className="flex items-center gap-5 ">
             <img src={Exp1} alt="e1" className="w-[30px]" />

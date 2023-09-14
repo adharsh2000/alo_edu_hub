@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import S1 from "../assets/S1.svg"
 import S2 from "../assets/S2.svg"
 import S3 from "../assets/S3.svg"
@@ -13,16 +14,18 @@ const Footer = () => {
           <br />
           when an unknown printer took a galley of type and scrambled
         </p>
+        <Link to="getstarted">
         <button className="bg-app-color mt-5 text-white p-3 rounded-md">Get Started</button>
+        </Link>
       </div>
       <div className="border border-app-color mt-4"></div>
       <div className="flex flex-col md:flex-row mt-3 items-center justify-between px-6 gap-3 pb-5 md:pb-0">
         <h3 className="text-app-color order-2 md:order-1">Alohub@2023 All rights reserved.</h3>
         <div className="flex gap-4 md:mr-24 order-1 md:order-2">
-            <a href="" className="text-app-color font-bold">Home</a>
-            <a href="" className="text-app-color font-bold">About</a>
-            <a href="" className="text-app-color font-bold">Courses</a>
-            <a href="" className="text-app-color font-bold">Contact</a>
+            <Link to="/" className="text-app-color font-bold">Home</Link>
+            <Link to="/about" className="text-app-color font-bold">About</Link>
+            <Link to="/faq" className="text-app-color font-bold">Faq</Link>
+            <Link to="/contact" className="text-app-color font-bold">Contact</Link>
         </div>
         <div className="flex gap-6 order-3">
             <a href=""><img src={S1} alt="facebook" /></a>
