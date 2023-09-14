@@ -4,7 +4,7 @@ const AboutBanner = () => {
   return (
     <div
       style={{ backgroundImage: `url(${BannerImg})`}}
-      className="bg-no-repeat h-[400px] flex flex-col items-center justify-center gap-2"
+      className="bg-no-repeat bg-cover h-[400px] flex flex-col items-center justify-center gap-2"
     >
       <h2 className="font-bold text-white text-5xl">
         About <span className="text-app-color">ALO </span> Hub

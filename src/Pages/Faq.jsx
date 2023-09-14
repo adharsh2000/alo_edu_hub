@@ -13,7 +13,7 @@ const Faq = () => {
     <FaqSectionOne />
     <div className="wrapper mt-20 mb-10">
       {/* main content here */}
-      <div className="max-w-[700px] w-full mx-auto mt-10 flex flex-col gap-4">
+      <div className="w-[95%] md:w-[700px] mx-auto mt-10 flex flex-col gap-4">
         {accordions.map((item, id) => {
           // destruct
           const { question, answer } = item;
