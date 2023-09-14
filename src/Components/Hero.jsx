@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* p */}
           <Fade>
-            <p className="w-[400px] ml-10 text-sm mt-3 text-gray-500">
+            <p className="w-80 md:w-[400px] ml-10 text-sm mt-3 text-gray-500">
               We provide our best service for students always try to achive our
               student trust and satisfaction. We provide our best service for
               students always try to achive our student trust and satisfaction.
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
         </Fade>
       </main>
-      <div className="bg-app-color w-[90%] md:w-[90%] mx-auto p-4 rounded-lg flex  gap-4">
+      <div className="bg-app-color w-[90%] md:w-[90%] mx-auto p-4 rounded-lg flex flex-col md:flex-row  gap-4">
         <Fade bottom>
         <div className="flex flex-col gap-3 text-center justify-around md:justify-between md:text-start">
           <h2 className="text-white font-bold md:text-2xl">Why choose Us</h2>

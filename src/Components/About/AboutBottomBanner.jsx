@@ -6,7 +6,7 @@ const AboutBottomBanner = () => {
     <div className="p-4 relative">
       <Fade bottom>
       <img src={Banner} alt="banner" className="w-full" />
-      <div className="absolute bottom-16 left-14 md:bottom-72 md:left-32 w-72 md:w-96">
+      <div className="absolute bottom-14 left-14 md:bottom-72 md:left-32 w-72 md:w-96">
         <h2 className="font-bold  text-white md:text-3xl md:mb-3">Experience Excellence,</h2>
         <h2 className="font-bold text-white md:text-4xl md:mb-4">Enroll Now!</h2>
         <p className="text-white text-xs md:mb-2 md:text-base">

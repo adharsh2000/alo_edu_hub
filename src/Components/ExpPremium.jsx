@@ -31,23 +31,23 @@ const ExpPremium = () => {
             <h2 className="font-bold text-5xl text-center md:text-start">Premium Learning</h2>
             <h2 className="text-app-color font-bold text-5xl text-center md:text-start">Experience</h2>
           </div>
-          <div className="flex items-center gap-5 ">
+          <div className="flex items-center gap-5 ml-6 md:ml-0">
             <img src={Exp1} alt="e1" className="w-[30px]" />
             <h4>Practical experience with a live project.</h4>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 ml-6 md:ml-0">
             <img src={Exp2} alt="e2" className="w-[30px]" />
             <h4> Training provided by well-experienced trainers.</h4>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 ml-6 md:ml-0">
             <img src={Exp3} alt="e3" className="w-[30px]" />
             <h4>Certificate of Recognition.</h4>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 ml-6 md:ml-0">
             <img src={Exp4} alt="e4" className="w-[30px]" />
             <h4>Flexible timings to suit the needs of the students.</h4>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 ml-6 md:ml-0">
             <img src={Exp5} alt="e5" className="w-[30px]" />
             <h4>100% placement record till date.</h4>
           </div>
