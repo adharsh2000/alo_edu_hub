@@ -63,31 +63,55 @@ const Navbar = () => {
 
   return (
     <>
-       <div className="flex py-4 px-10 items-center shadow-md">
-      <img className="w-20 md:w-28" src={Logo} alt="logo" />
-      <ul className={`ml-auto md:flex md:justify-end ${nav ? "hidden" : "hidden"} gap-10`}>
-        <li>
-          <Link to="/" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">Home</Link>
-        </li>
-        <li>
-          <Link to="/about" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">About</Link>
-        </li>
-        <li>
-          <Link to="/faq" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">FAQ</Link>
-        </li>
-        <li>
-          <Link to="/contact" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">Contact</Link>
-        </li>
-      </ul>
+      <div className="flex py-4 px-10 items-center shadow-md">
+        <img className="w-20 md:w-28" src={Logo} alt="logo" />
+        <ul
+          className={`ml-auto md:flex md:justify-end ${
+            nav ? "hidden" : "hidden"
+          } gap-10`}
+        >
+          <li>
+            <Link
+              to="/"
+              className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/faq"
+              className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              FAQ
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
 
-      <div className="cursor-pointer md:hidden ml-auto scale-100">
-        {!nav ? (
-          <AiOutlineClose onClick={handleNav} size={20} />
-        ) : (
-          <AiOutlineMenu onClick={handleNav} size={20} />
-        )}
+        <div className="cursor-pointer md:hidden ml-auto scale-100">
+          {!nav ? (
+            <AiOutlineClose onClick={handleNav} size={20} />
+          ) : (
+            <AiOutlineMenu onClick={handleNav} size={20} />
+          )}
+        </div>
       </div>
-    </div>
 
       <div
         className={
@@ -99,19 +123,39 @@ const Navbar = () => {
         <ul className="p-4 flex-col">
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <Link to="/" className="font-bold hover:text-sky-500 focus:text-sky-500">Home</Link>
+            <Link
+              to="/"
+              className="font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              Home
+            </Link>
           </li>
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <Link to="/about" className="font-bold hover:text-sky-500 focus:text-sky-500">About</Link>
+            <Link
+              to="/about"
+              className="font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              About
+            </Link>
           </li>
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <Link to="/faq" className="font-bold hover:text-sky-500 focus:text-sky-500">FAQ</Link>
+            <Link
+              to="/faq"
+              className="font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              FAQ
+            </Link>
           </li>
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <Link to="/contact" className="font-bold hover:text-sky-500 focus:text-sky-500">Contact</Link>
+            <Link
+              to="/contact"
+              className="font-bold hover:text-sky-500 focus:text-sky-500"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

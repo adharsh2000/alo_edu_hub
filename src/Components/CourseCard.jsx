@@ -3,6 +3,7 @@ import Period from "../assets/Period.svg";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
+/* eslint-disable react/prop-types */
 const CourseCard = ({ Heading, content, img }) => {
   return (
     <Fade bottom>

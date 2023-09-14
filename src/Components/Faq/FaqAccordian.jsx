@@ -6,6 +6,7 @@ import { BiChevronDown } from "react-icons/bi";
 /* import framer-motion */
 import { motion, AnimatePresence } from "framer-motion";
 
+/* eslint-disable react/prop-types */
 const FaqAccordion = ({ question, answer }) => {
   const [show, setShow] = useState(false);
 

@@ -14,7 +14,7 @@ const Footer = () => {
           <br />
           when an unknown printer took a galley of type and scrambled
         </p>
-        <Link to="getstarted">
+        <Link to="/getstarted">
         <button className="bg-app-color mt-5 text-white p-3 rounded-md">Get Started</button>
         </Link>
       </div>
