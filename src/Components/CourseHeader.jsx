@@ -10,7 +10,7 @@ const CourseHeader = () => {
           when an unknown printer took a galley of type and scrambled it to make
         </p>
       </div>
-      <img src={Arrow} alt="arrow" className="inline-block absolute right-2" />
+      <img src={Arrow} alt="arrow" className="inline-block absolute right-0 -top-5 md:right-2" />
     </div>
   );
 };

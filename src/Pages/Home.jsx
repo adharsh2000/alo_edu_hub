@@ -16,8 +16,8 @@ const Home = () => {
       <Fade bottom>
         <CourseHeader />
       </Fade>
-      <div className="container mb-10 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="container mb-10 px-5 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center">
           {courseCardData.map((item) => (
             <CourseCard
               key={item.id}

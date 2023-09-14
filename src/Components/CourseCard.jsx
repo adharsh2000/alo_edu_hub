@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 const CourseCard = ({ Heading, content, img }) => {
   return (
     <Fade bottom>
-      <div className="bg-white rounded-xl shadow-app-shadow p-3 relative mb-10">
+      <div className="bg-white rounded-xl shadow-app-shadow p-3 relative mb-10 w-96">
         <img src={img} alt="img" />
         <div className="flex justify-between items-center mt-1">
           <h3 className="font-bold">{Heading}</h3>

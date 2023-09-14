@@ -67,16 +67,16 @@ const Navbar = () => {
       <img className="w-20 md:w-28" src={Logo} alt="logo" />
       <ul className={`ml-auto md:flex md:justify-end ${nav ? "hidden" : "hidden"} gap-10`}>
         <li>
-          <Link to="/" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">Home</Link>
+          <Link to="/" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">Home</Link>
         </li>
         <li>
-          <Link to="/about" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">About</Link>
+          <Link to="/about" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">About</Link>
         </li>
         <li>
-          <Link to="/faq" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">FAQ</Link>
+          <Link to="/faq" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">FAQ</Link>
         </li>
         <li>
-          <Link to="/contact" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">Contact</Link>
+          <Link to="/contact" className="text-md font-bold hover:text-sky-500 focus:text-sky-500">Contact</Link>
         </li>
       </ul>
 

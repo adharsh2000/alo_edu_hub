@@ -15,7 +15,7 @@ const StudentCardSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center gap-10">
+        <div className="flex flex-col items-center md:flex-row justify-center gap-10">
           <StudentCard />
           <StudentCard />
           <StudentCard />
