@@ -4,6 +4,7 @@ import BookIcon from "../assets/Book.svg";
 import Clock from "../assets/Clock.svg";
 import Avatars from "../assets/Avatars.svg";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -30,10 +31,11 @@ const Hero = () => {
             student trust and satisfaction. We provide our best service for
             students always try to achive our student trust and satisfaction.
           </p>
-
-          <button className="bg-app-color ml-10 mt-4 text-white p-3 rounded-md">
-            Get Started
-          </button>
+          <Link to="/getstarted">
+            <button className="bg-app-color ml-10 mt-4 text-white p-3 rounded-md">
+              Get Started
+            </button>
+          </Link>
         </div>
         <Fade bottom>
           <div>

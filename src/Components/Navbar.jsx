@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import Logo from "../assets/Logo.svg";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 // import Hamburger from "../assets/Hamburger.svg";
 
 // const Navbar = () => {
@@ -50,6 +51,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 // export default Navbar;
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -65,16 +67,16 @@ const Navbar = () => {
       <img className="w-20 md:w-28" src={Logo} alt="logo" />
       <ul className={`ml-auto md:flex md:justify-end ${nav ? "hidden" : "hidden"} gap-10`}>
         <li>
-          <a href="#" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">Home</a>
+          <Link to="/" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">Home</Link>
         </li>
         <li>
-          <a href="3" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">About</a>
+          <Link to="/about" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">About</Link>
         </li>
         <li>
-          <a href="3" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">FAQ</a>
+          <Link to="/faq" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">FAQ</Link>
         </li>
         <li>
-          <a href="3" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">Contact</a>
+          <Link to="/contact" className="text-sm font-bold hover:text-sky-500 focus:text-sky-500">Contact</Link>
         </li>
       </ul>
 
@@ -97,19 +99,19 @@ const Navbar = () => {
         <ul className="p-4 flex-col">
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <a href="#" className="font-bold hover:text-sky-500 focus:text-sky-500">Home</a>
+            <Link to="/" className="font-bold hover:text-sky-500 focus:text-sky-500">Home</Link>
           </li>
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <a href="#" className="font-bold hover:text-sky-500 focus:text-sky-500">About</a>
+            <Link to="/about" className="font-bold hover:text-sky-500 focus:text-sky-500">About</Link>
           </li>
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <a href="#" className="font-bold hover:text-sky-500 focus:text-sky-500">FAQ</a>
+            <Link to="/faq" className="font-bold hover:text-sky-500 focus:text-sky-500">FAQ</Link>
           </li>
           <li className="p-4 w-40 text-left cursor-pointer rounded-md border-gray-50 focus:text-[#4154f1]">
             {/* <Link to="/home">Home</Link> */}
-            <a href="#" className="font-bold hover:text-sky-500 focus:text-sky-500">Contact</a>
+            <Link to="/contact" className="font-bold hover:text-sky-500 focus:text-sky-500">Contact</Link>
           </li>
         </ul>
       </div>
