@@ -1,5 +1,8 @@
-import StudentCard from "./StudentCard";
+// import StudentCard from "./StudentCard";
 import { Fade } from "react-reveal";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import TestiMonials from "./Carousal/Carousal";
 
 const StudentCardSection = () => {
   return (
@@ -15,11 +18,12 @@ const StudentCardSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row justify-center gap-10">
+        {/* <div className="flex flex-col items-center md:flex-row justify-center gap-10">
           <StudentCard />
           <StudentCard />
           <StudentCard />
-        </div>
+        </div> */}
+        <TestiMonials />
       </div>
     </Fade>
   );

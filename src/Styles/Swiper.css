@@ -1,54 +1,28 @@
-/* .swiper-pagination-bullet {
-    position: absolute;
-    margin-bottom: 30px;
-} */
+.slider{
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
 
+.slider .slide-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
 
-.card-slider-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 600px; /* Adjust the container width as needed */
-    margin: 0 auto;
+.slider .slide{
+  height: 100px;
+  width: 250px;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
   }
-  
-  .card-slider {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  100%{
+    transform: translateX(calc(-250px * 7));
   }
-  
-  .card {
-    flex: 0 0 100%;
-    margin-right: 10px; /* Adjust spacing between cards */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  .active-card {
-    /* Customize styles for the active card */
-    background-color: #f0f0f0;
-  }
-  
-  .slider-navigation {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .slider-button {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 50%;
-    margin: 0 5px; /* Adjust spacing between buttons */
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .active-button {
-    background-color: #333; /* Color for the active button */
-    width: 20px;
-    border-radius: 50px;
-  }
-  
+}

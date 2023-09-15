@@ -50,7 +50,7 @@ const AboutSectionOne = () => {
       </Fade>
         </div>
       </div>
-        <div className="bg-app-color flex w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
+        <div className="bg-app-color flex flex-col md:flex-row gap-5 w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
           <Fade bottom>
             <div className="flex flex-col items-center">
                 <h2 className="font-bold text-white text-4xl">10+</h2>

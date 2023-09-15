@@ -17,7 +17,7 @@ const FaqSectionOne = () => {
             name=""
             id=""
             placeholder="Ask something here?"
-            className="bg-[#D9D9D9] w-[300px] md:w-96 p-3 outline-none"
+            className="bg-[#D9D9D9] w-[250px] md:w-96 p-3 outline-none"
           />
           <button className="bg-app-color py-3 px-6 text-white">Submit</button>
         </Fade>

@@ -1,4 +1,4 @@
-import P1 from "../assets/P1.svg"
+import P1 from "../assets/P1.svg";
 
 const StudentCard = () => {
   return (
@@ -9,10 +9,16 @@ const StudentCard = () => {
         itself”
       </p>
       <div className="flex items-center gap-4">
-        <img src={P1} alt="person" />
+        <img
+          src={P1}
+          alt="person"
+          style={{
+            width: 50,
+          }}
+        />
         <div>
-            <h2 className="font-bold text-xs">Lorem ipsum</h2>
-            <h3 className="text-gray-500 text-xs">Web Developer</h3>
+          <h2 className="font-bold text-xs">Lorem ipsum</h2>
+          <h3 className="text-gray-500 text-xs">Web Developer</h3>
         </div>
       </div>
     </div>
