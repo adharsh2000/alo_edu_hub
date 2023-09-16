@@ -19,7 +19,7 @@ const FaqAccordion = ({ question, answer }) => {
         onClick={() => setShow(!show)}
         className="flex justify-between items-center cursor-pointer"
       >
-        <h1 className="text-xl font-semibold text-app-color">{question}</h1>
+        <h1 className="text-xl font-semibold text-app-color w-80 md:w-[600px]">{question}</h1>
         <BiChevronDown
           className={`text-3xl transition-all duration-500 bg-app-color text-white rounded-full ${
             show ? "rotate-180" : ""
