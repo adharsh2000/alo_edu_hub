@@ -6,6 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Poppins',sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 600px) {
+    .Toastify__toast {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
