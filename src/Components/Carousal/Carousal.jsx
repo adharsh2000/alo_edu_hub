@@ -30,7 +30,7 @@ const TestiMonials = () => {
     },
   };
   return (
-    <section id="testimonial" className="testimonials ">
+    <section id="testimonial" className="testimonials md:pl-4">
       <OwlCarousel
         id="customer-testimonoals"
         className="owl-carousel owl-theme"

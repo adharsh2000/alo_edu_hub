@@ -28,7 +28,10 @@ const Footer = () => {
       <div className="border border-app-color mt-4"></div>
       <div className="flex flex-col md:flex-row mt-3 items-center justify-between px-6 gap-3 pb-5 md:pb-0">
         <h3 className="text-app-color order-2 md:order-1">
-          Alohub@2023 All rights reserved.
+          <Link className="mr-1" to="mailto:aloeducationalhub@gmail.com">
+            Alohub@2023
+          </Link>
+          All rights reserved.
         </h3>
         <div className="flex gap-4 md:mr-24 order-1 md:order-2">
           <Link to="/" className="text-app-color font-bold">

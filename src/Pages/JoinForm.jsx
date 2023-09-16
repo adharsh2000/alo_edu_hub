@@ -24,7 +24,8 @@ const JoinForm = () => {
     },
   };
 
-  const url = "http://ec2-3-108-250-187.ap-south-1.compute.amazonaws.com:5000/api/email/send";
+  const url =
+    "http://ec2-3-108-250-187.ap-south-1.compute.amazonaws.com:5000/api/email/send";
 
   // Use state for form data
   const [formData, setFormData] = useState(initialFormData);
@@ -32,7 +33,7 @@ const JoinForm = () => {
   const validateDateOfBirth = (value) => {
     const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!value.match(dobRegex)) {
-      return "Invalid date format (YYYY-MM-DD)";
+      return "Date of birth required";
     }
 
     // Check if the date is in the past (e.g., not a future date)
@@ -56,7 +57,7 @@ const JoinForm = () => {
         }
         return "";
       case "mobileNo":
-        if (value.trim() === "" || value.length < 10) {
+        if (value.trim() === "" || value.length < 10 || value < 0) {
           return "Phone number is required";
         }
         return "";
@@ -66,7 +67,7 @@ const JoinForm = () => {
         }
         return "";
       case "age":
-        if (value.trim() === "") {
+        if (value.trim() === "" || value < 0) {
           return "Age is required";
         }
         return "";
@@ -129,16 +130,17 @@ const JoinForm = () => {
     } else {
       // Form is valid, you can submit data or perform actions here
       // Reset the form after successful submission
-      const Data = {...formData,type:"AloHub"};
-      axios.post(url,Data)
-        .then(({data})=>{
-          console.log("sender",data);
+      const Data = { ...formData, type: "AloHub" };
+      axios
+        .post(url, Data)
+        .then(({ data }) => {
+          console.log("sender", data);
           toast.success("Form Submitted Successfully..");
         })
         .catch((err) => {
-          console.log('Error', err)
-          toast.error('Form Submition Faild..')
-        })
+          console.log("Error", err);
+          toast.error("Form Submition Faild..");
+        });
       setFormData(initialFormData);
     }
   };
@@ -265,7 +267,9 @@ const JoinForm = () => {
               onChange={handleInputChange}
             />
             {formData.errors.educationalQualification && (
-              <p className="text-red-500">{formData.errors.educationalQualification}</p>
+              <p className="text-red-500">
+                {formData.errors.educationalQualification}
+              </p>
             )}
           </div>
 
@@ -284,9 +288,21 @@ const JoinForm = () => {
               onChange={handleInputChange}
             >
               <option value="choose">choose</option>
-              <option value="value 1">value 1</option>
-              <option value="value 1">value 2</option>
-              <option value="value 1">value 3</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Web Development - Angular">
+                Web Development - Angular
+              </option>
+              <option value="Web Development - React">
+                Web Development - React
+              </option>
+              <option value="Mobile App Development">
+                Mobile App Development
+              </option>
+              <option value="Back-End Development">Back-End Development</option>
+              <option value="Android">Android</option>
+              <option value="Manual Testing">Manual Testing</option>
             </select>
             {formData.errors.course && (
               <p className="text-red-500">{formData.errors.course}</p>
