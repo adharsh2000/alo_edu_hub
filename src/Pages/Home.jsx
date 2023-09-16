@@ -25,6 +25,7 @@ const Home = () => {
               Heading={item.courseName}
               content={item.courseDesc}
               img={item.courseImage}
+              period={item.period}
             />
           ))}
         </div>

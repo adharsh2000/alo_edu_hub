@@ -1,6 +1,8 @@
 import  { useState } from 'react';
 import Map from '../../assets/Map.svg';
 import { Fade } from 'react-reveal';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const ContactFormSection = () => {
   // Initialize form data state
@@ -8,14 +10,17 @@ const ContactFormSection = () => {
     firstName: '',
     lastName: '',
     email: '',
-    message: '',
+    summary: '',
     errors: {
       firstName: '',
       lastName: '',
       email: '',
-      message: '',
+      summary: '',
     },
   };
+
+  const url = "http://ec2-3-108-250-187.ap-south-1.compute.amazonaws.com:5000/api/email/send";
+
 
   // Use state for form data
   const [formData, setFormData] = useState(initialFormState);
@@ -38,9 +43,9 @@ const ContactFormSection = () => {
           return 'Invalid email address';
         }
         return '';
-      case 'message':
+      case 'summary':
         if (value.trim() === '') {
-          return 'Message is required';
+          return 'Summary is required';
         }
         return '';
       default:
@@ -87,6 +92,17 @@ const ContactFormSection = () => {
     } else {
       // Form is valid, you can submit data or perform actions here
       // Reset the form after successful submission
+      const Data = {...formData,type:"AloGroups"}
+      console.log(Data);
+      axios.post(url,Data)
+        .then(({data})=>{
+          console.log("sender",data);
+          toast.success("Form Submitted Successfully..");
+        })
+        .catch((err) => {
+          console.log('Error', err)
+          toast.error('Form Submition Faild..')
+        })
       setFormData(initialFormState);
     }
   };
@@ -162,18 +178,18 @@ const ContactFormSection = () => {
                 Leave a Message
               </label>
               <textarea
-                name="message"
-                id="message"
+                name="summary"
+                id="summary"
                 cols="30"
                 rows="7"
                 className={`border-2 border-[#8A8A8A] p-1 outline-none ${
-                  formData.errors.message ? 'border-red-500' : ''
+                  formData.errors.summary ? 'border-red-500' : ''
                 }`}
-                value={formData.message}
+                value={formData.summary}
                 onChange={handleInputChange}
               ></textarea>
-              {formData.errors.message && (
-                <p className="text-red-500">{formData.errors.message}</p>
+              {formData.errors.summary && (
+                <p className="text-red-500">{formData.errors.summary}</p>
               )}
             </div>
 

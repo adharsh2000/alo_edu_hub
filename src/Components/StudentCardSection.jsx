@@ -14,7 +14,8 @@ const StudentCardSection = () => {
               What student’s say
             </h2>
             <p className="text-gray-500 mx-auto  text-center">
-              Lorem Ipsum is simply dummy text of the printing.
+              Here you will find valuable feedback from students who have had
+              experiences with our various courses
             </p>
           </div>
         </div>

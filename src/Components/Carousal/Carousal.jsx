@@ -3,6 +3,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./Carousal.css";
 import StudentCard from "../StudentCard";
+import { studentCardData } from "../../data/studentCardData";
 
 const TestiMonials = () => {
   //Owl Carousel Settings
@@ -35,33 +36,14 @@ const TestiMonials = () => {
         className="owl-carousel owl-theme"
         {...options}
       >
-        <StudentCard />
-        <StudentCard />
-        <StudentCard />
-        <StudentCard />
-        {/* <div className="w-48 h-80 bg-orange-700">
-            helo
-        </div>
-        <div className="w-48 h-80 bg-orange-700">
-            helo
-        </div>
-        <div className="w-48 h-80 bg-orange-700">
-            helo
-        </div>
-        <div className="w-48 h-80 bg-orange-700">
-            helo
-        </div> */}
+        {
+          studentCardData.map((item,index) => (
+            <StudentCard key={index} name={item.name} img={item.img} position={item.position} desc={item.desc} />
+          ))
+        }
       </OwlCarousel>
     </section>
   );
 };
 
 export default TestiMonials;
-
-// const Carousal = () => {
-//   return (
-//     <div>Carousal</div>
-//   )
-// }
-
-// export default Carousal

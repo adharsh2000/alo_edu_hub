@@ -9,14 +9,14 @@ const AboutSectionOne = () => {
   return (
     <div className="flex flex-col items-center justify-center relative mb-5 mt-3">
       <Fade bottom>
-
-      <div>
-        <h2 className="font-bold text-3xl text-center mb-5">What we do</h2>
-        <p className="text-gray-500 mx-auto w-[55%] text-center">
-          Lorem Ipsum has been the industrys standard dummy text ever since the
-          when an unknown printer took a galley of type and scrambled it to make
-        </p>
-      </div>
+        <div>
+          <h2 className="font-bold text-3xl text-center mb-5">What we do</h2>
+          <p className="text-gray-500 mx-auto w-[55%] text-center">
+            We provide individuals with the necessary skills and knowledge to
+            thrive in the dynamic field of technology, enabling students to
+            create resilient and scalable software solutions.
+          </p>
+        </div>
       </Fade>
       <img
         src={Arrow}
@@ -25,52 +25,62 @@ const AboutSectionOne = () => {
       />
       <div className="flex justify-center mt-7">
         <div className="flex flex-col items-center md:flex-row md:w-[80%] md:justify-center gap-10">
-      <Fade bottom>
-          <div className="w-80">
-            <img src={img1} alt="person" className="mb-3 w-[380px]" />
-            <div className="flex">
-              <img src={img2} alt="person" className="w-[180px] mr-4" />
-              <img src={img3} alt="person" className="w-[120px]" />
-            </div>
-          </div>
-          <div className="w-96 md:w-[50%] flex flex-col justify-center">
-            <p className="text-center md:text-start mb-6 text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              cursus pharetra, mollis cras. Luctus pharetra duis nisi,
-              fermentum, ipsum et felis odio. Nec semper nunc,s amet f arcu
-              interdum Nec semper nunc,s amet f arcu interdum quam.
-            </p>
-            <p className="text-center md:text-start text-gray-500">
-              Egestas amet fermentum aliquam blandit pharetra eleifend. Id duis
-              ipsum ac ante. Lectus enim, maecenas adipiscing neque,
-              pellentesque nunc ut ipsum. Et adipiscing euismod placerat lacus.
-              In sed arcu ullamcorper pharetra, nunc lobortis facilisis cursus
-              erat.
-            </p>
-          </div>
-      </Fade>
-        </div>
-      </div>
-        <div className="bg-app-color flex flex-col md:flex-row gap-5 w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
           <Fade bottom>
-            <div className="flex flex-col items-center">
-                <h2 className="font-bold flex text-white text-4xl"><Counter num={10} />+</h2>
-                <p className="text-white">Courses</p>
+            <div className="w-80">
+              <img src={img1} alt="person" className="mb-3 w-[380px]" />
+              <div className="flex">
+                <img src={img2} alt="person" className="w-[180px] mr-4" />
+                <img src={img3} alt="person" className="w-[120px]" />
+              </div>
             </div>
-            <div className="flex flex-col items-center">
-                <h2 className="font-bold flex text-white text-4xl"><Counter num={30} />+</h2>
-                <p className="text-white">Placements</p>
-            </div>
-            <div className="flex flex-col items-center">
-                <h2 className="font-bold flex text-white text-4xl"><Counter num={100} />%</h2>
-                <p className="text-white">Guaranteed</p>
-            </div>
-            <div className="flex flex-col items-center">
-                <h2 className="font-bold flex text-white text-4xl"><Counter num={10} />+</h2>
-                <p className="text-white">Courses</p>
+            <div className="w-96 md:w-[50%] flex flex-col justify-center">
+              <p className="text-center md:text-start mb-6 text-gray-500">
+                At Alo Hub, we specialize in providing outstanding software
+                development training to individuals seeking to enhance their
+                programming skills and embark on successful careers in the tech
+                industry. We provide a supportive learning environment with
+                experienced instructors who guide and mentor students throughout
+                their educational journey.
+              </p>
+              <p className="text-center md:text-start text-gray-500">
+                After completing our software development courses, students
+                receive a reputable certification that attests to their
+                proficiency. With our solid industry connections, we offer 100%
+                placement assistance, linking graduates with positions that will
+                help them advance their careers.
+              </p>
             </div>
           </Fade>
         </div>
+      </div>
+      <div className="bg-app-color flex flex-col md:flex-row gap-5 w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
+        <Fade bottom>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold flex text-white text-4xl">
+              <Counter num={10} />+
+            </h2>
+            <p className="text-white">Courses</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold flex text-white text-4xl">
+              <Counter num={30} />+
+            </h2>
+            <p className="text-white">Placements</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold flex text-white text-4xl">
+              <Counter num={100} />%
+            </h2>
+            <p className="text-white">Guaranteed</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold flex text-white text-4xl">
+              <Counter num={10} />+
+            </h2>
+            <p className="text-white">Courses</p>
+          </div>
+        </Fade>
+      </div>
     </div>
   );
 };

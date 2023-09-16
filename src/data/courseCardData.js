@@ -12,55 +12,64 @@ export const courseCardData = [
     {
         id:1,
         courseName:"Graphic Design",
-        courseDesc:'Photoshop,illustrator,indesign',
-        courseImage:C1
+        courseDesc:'Photoshop,illustrator,Indesign',
+        courseImage:C3,
+        period:2,
     },
     {
         id:2,
-        courseName:"Web Design",
-        courseDesc:'Html,Css,Bootsrap',
-        courseImage:C2
+        courseName:"UI/UX Design",
+        courseDesc:'Photoshop,illustrator,Indesign,figma',
+        courseImage:C1,
+        period:3,
     },
     {
         id:3,
-        courseName:"Graphic Design",
+        courseName:"Web Design",
         courseDesc:'Html,Css,Bootsrap',
-        courseImage:C3
+        courseImage:C2,
+        period:3,
     },
     {
         id:4,
-        courseName:"Angular Development",
-        courseDesc:'Photoshop,illustrator,Figma',
-        courseImage:C4
+        courseName:"Web Development",
+        courseDesc:'Html,Css,Bootsrap,Java script,Angular',
+        courseImage:C4,
+        period:3,
     },
     {
         id:5,
         courseName:"Web Development",
-        courseDesc:'Html,Css,Bootsrap',
-        courseImage:C5
+        courseDesc:'Html,Css,Bootsrap,Java script,React',
+        courseImage:C5,
+        period:3,
     },
     {
         id:6,
-        courseName:"Flutter Development",
-        courseDesc:'Html,Css,Bootsrap',
-        courseImage:C6
+        courseName:"Mobile App Development",
+        courseDesc:'Dart',
+        courseImage:C6,
+        period:3,
     },
     {
         id:7,
-        courseName:"Node js",
-        courseDesc:'Photoshop,illustrator,Figma',
-        courseImage:C7
+        courseName:"Back-End Development",
+        courseDesc:'Node js',
+        courseImage:C7,
+        period:3,
     },
     {
         id:8,
         courseName:"Android",
-        courseDesc:'Html,Css,Bootsrap',
-        courseImage:C8
+        courseDesc:'Java,kotlin',
+        courseImage:C8,
+        period:3,
     },
     {
         id:9,
         courseName:"Manual Testing",
-        courseDesc:'Html,Css,Bootsrap',
-        courseImage:C9
+        courseDesc:'',
+        courseImage:C9,
+        period:3,
     },
 ]

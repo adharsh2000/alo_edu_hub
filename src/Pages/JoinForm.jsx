@@ -1,26 +1,30 @@
 import { useState } from "react";
 import Logo from "../assets/Logo.svg";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const JoinForm = () => {
   // Initialize form data state
   const initialFormData = {
     name: "",
-    phone: "",
+    mobileNo: "",
     email: "",
     age: "",
-    dob: "",
-    education: "",
+    dateOfBirth: "",
+    educationalQualification: "",
     course: "",
     errors: {
       name: "",
-      phone: "",
+      mobileNo: "",
       email: "",
       age: "",
-      dob: "",
-      education: "",
+      dateOfBirth: "",
+      educationalQualification: "",
       course: "",
     },
   };
+
+  const url = "http://ec2-3-108-250-187.ap-south-1.compute.amazonaws.com:5000/api/email/send";
 
   // Use state for form data
   const [formData, setFormData] = useState(initialFormData);
@@ -51,7 +55,7 @@ const JoinForm = () => {
           return "Name is required";
         }
         return "";
-      case "phone":
+      case "mobileNo":
         if (value.trim() === "" || value.length < 10) {
           return "Phone number is required";
         }
@@ -66,13 +70,13 @@ const JoinForm = () => {
           return "Age is required";
         }
         return "";
-      case "education":
+      case "educationalQualification":
         if (value.trim() === "") {
-          return "Age is required";
+          return "Qualification is required";
         }
         return "";
-      case "dob":
-        if (fieldName === "dob") {
+      case "dateOfBirth":
+        if (fieldName === "dateOfBirth") {
           return validateDateOfBirth(value);
         }
         return "";
@@ -125,6 +129,16 @@ const JoinForm = () => {
     } else {
       // Form is valid, you can submit data or perform actions here
       // Reset the form after successful submission
+      const Data = {...formData,type:"AloHub"};
+      axios.post(url,Data)
+        .then(({data})=>{
+          console.log("sender",data);
+          toast.success("Form Submitted Successfully..");
+        })
+        .catch((err) => {
+          console.log('Error', err)
+          toast.error('Form Submition Faild..')
+        })
       setFormData(initialFormData);
     }
   };
@@ -162,20 +176,20 @@ const JoinForm = () => {
 
           {/* Phone Number */}
           <div className="mb-4">
-            <label htmlFor="phone" className="block mb-2">
+            <label htmlFor="mobileNo" className="block mb-2">
               Phone Number
             </label>
             <input
               type="number"
-              id="phone"
+              id="mobileNo"
               className={`w-full border border-gray-300 rounded-md py-2 px-3 ${
-                formData.errors.phone ? "border-red-500" : ""
+                formData.errors.mobileNo ? "border-red-500" : ""
               }`}
-              value={formData.phone}
+              value={formData.mobileNo}
               onChange={handleInputChange}
             />
-            {formData.errors.phone && (
-              <p className="text-red-500">{formData.errors.phone}</p>
+            {formData.errors.mobileNo && (
+              <p className="text-red-500">{formData.errors.mobileNo}</p>
             )}
           </div>
 
@@ -223,35 +237,35 @@ const JoinForm = () => {
               </label>
               <input
                 type="date"
-                id="dob"
+                id="dateOfBirth"
                 className={`w-full border border-gray-300 rounded-md py-2 px-3 ${
-                  formData.errors.dob ? "border-red-500" : ""
+                  formData.errors.dateOfBirth ? "border-red-500" : ""
                 }`}
-                value={formData.dob}
+                value={formData.dateOfBirth}
                 onChange={handleInputChange}
               />
-              {formData.errors.dob && (
-                <p className="text-red-500">{formData.errors.dob}</p>
+              {formData.errors.dateOfBirth && (
+                <p className="text-red-500">{formData.errors.dateOfBirth}</p>
               )}
             </div>
           </div>
 
           {/* Education Qualification */}
           <div className="mb-4">
-            <label htmlFor="education" className="block mb-2">
+            <label htmlFor="educationalQualification" className="block mb-2">
               Education Qualification
             </label>
             <input
               type="text"
-              id="education"
+              id="educationalQualification"
               className={`w-full border border-gray-300 rounded-md py-2 px-3 ${
-                formData.errors.education ? "border-red-500" : ""
+                formData.errors.educationalQualification ? "border-red-500" : ""
               }`}
-              value={formData.education}
+              value={formData.educationalQualification}
               onChange={handleInputChange}
             />
-            {formData.errors.education && (
-              <p className="text-red-500">{formData.errors.education}</p>
+            {formData.errors.educationalQualification && (
+              <p className="text-red-500">{formData.errors.educationalQualification}</p>
             )}
           </div>
 

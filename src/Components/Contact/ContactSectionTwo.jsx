@@ -4,6 +4,7 @@ import S3 from "../../assets/S3.svg";
 import Phone from "../../assets/Phone.svg";
 import Mail from "../../assets/Mail.svg";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 const ContactSectionTwo = () => {
   return (
@@ -12,9 +13,19 @@ const ContactSectionTwo = () => {
         <Fade bottom>
           <h2 className="font-bold text-lg"> FOLLOW OUR SOCIALS </h2>
           <div className="flex gap-4">
-            <img src={S1} alt="facebook" />
+            <Link
+              to="https://www.facebook.com/profile.php?id=61551218908619&mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <img src={S1} alt="facebook" />
+            </Link>
             <img src={S2} alt="twitter" />
-            <img src={S3} alt="instagram" />
+            <Link
+              to="https://instagram.com/alo_educational_hub?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <img src={S3} alt="instagram" />
+            </Link>
           </div>
         </Fade>
       </div>

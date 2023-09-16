@@ -1,4 +1,4 @@
-import img1 from "../../assets/AboutS21.svg"
+import img1 from "../../assets/AboutS21.svg";
 import { Fade } from "react-reveal";
 
 const AboutSectionTwo = () => {
@@ -6,32 +6,36 @@ const AboutSectionTwo = () => {
     <div className="flex flex-col items-center justify-center mb-5 mt-8">
       <div>
         <Fade bottom>
-        <h2 className="font-bold text-3xl text-center mb-5">Our MIssion</h2>
-        <p className="text-gray-500 mx-auto text-center ">
-          Lorem Ipsum is simply dummy text of the printing.
-        </p>
+          <h2 className="font-bold text-3xl text-center mb-5">Our MIssion</h2>
+          <p className="text-gray-500 mx-auto text-center ">
+            Empowering students with innovative software skills for career
+            success
+          </p>
         </Fade>
       </div>
       <div className="w-[80%] flex flex-col md:flex-row md:justify-center gap-10 mt-9 mx-auto">
         <Fade bottom>
-
-        <div className="md:w-[50%] flex flex-col items-center justify-center">
-          <p className="text-center md:text-start mb-6 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            cursus pharetra, mollis cras. Luctus pharetra duis nisi, fermentum,
-            ipsum et felis odio. Nec semper nunc,s amet f arcu interdum Nec
-            semper nunc,s amet f arcu interdum quam.
-          </p>
-          <p className="text-center md:text-start text-gray-500">
-            Egestas amet fermentum aliquam blandit pharetra eleifend. Id duis
-            ipsum ac ante. Lectus enim, maecenas adipiscing neque, pellentesque
-            nunc ut ipsum. Et adipiscing euismod placerat lacus. In sed arcu
-            ullamcorper pharetra, nunc lobortis facilisis cursus erat.
-          </p>
-        </div>
-        <div className="flex items-center justify-center">
+          <div className="md:w-[50%] flex flex-col items-center justify-center">
+            <p className="text-center md:text-start mb-6 text-gray-500">
+              At Alo Educational Hub, we are passionate about creating a
+              positive and enriching learning experience for our students. We
+              believe in the power of continuous self-improvement and strive to
+              raise the bar with each training program we offer. Our mission is
+              to turn our vision into reality by becoming a renowned training
+              organization globally, respected for our innovative and systematic
+              approach.
+            </p>
+            <p className="text-center md:text-start text-gray-500">
+              We believe that knowledge has no boundaries, and our commitment to
+              growth knows no limits. We embrace the evolution of technology by
+              innovating and adapting. As we grow our network, we add fresh
+              programs for advanced learning that get students ready for the
+              digital world.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
             <img src={img1} alt="img" className="w-80" />
-        </div>
+          </div>
         </Fade>
       </div>
     </div>

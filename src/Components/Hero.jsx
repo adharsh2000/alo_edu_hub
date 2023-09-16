@@ -31,9 +31,9 @@ const Hero = () => {
           {/* p */}
           <Fade>
             <p className="w-80 md:w-[400px] ml-10 text-sm mt-3 text-gray-500">
-              We provide our best service for students always try to achive our
-              student trust and satisfaction. We provide our best service for
-              students always try to achive our student trust and satisfaction.
+              We provide the best services for students. Our utmost priority is
+              to earn your trust and ensure your satisfaction throughout your
+              learning journey with us.
             </p>
           </Fade>
           <Link to="/getstarted">
@@ -48,33 +48,34 @@ const Hero = () => {
           </div>
         </Fade>
       </main>
-      <div className="bg-app-color w-[90%] md:w-[90%] md:h-36 md:p-5 mx-auto p-4 rounded-lg flex flex-col md:flex-row  gap-4">
+      <div className="bg-app-color w-[90%] md:w-[90%] md:h-auto md:p-5 mx-auto p-4 rounded-lg flex flex-col md:flex-row  gap-4">
         <Fade bottom>
-        <div className="flex flex-col gap-3 text-center justify-around md:justify-between md:text-start">
-          <h2 className="text-white font-bold md:text-4xl">Why choose Us</h2>
-          <p className="text-white text-xs md:text-lg text-center md:text-start">
-            Lorem ipsum dolor sit amet, erat porttitor eget. Vestibulum quis
-            orci lacus. Sed in neque in nisi
-          </p>
-        </div>
-        <div className="flex flex-col gap-3 items-center text-center justify-around md:items-center md:justify-between">
-          <img src={BookIcon} alt="book" className="w-10" />
-          <p className="text-white text-md md:text-lg">
-            Practical experience with a live project.
-          </p>
-        </div>
-        <div className="flex flex-col gap-3 items-center text-center justify-around md:items-center md:justify-between">
-          <img src={Clock} alt="clock" className="w-10" />
-          <p className="text-white text-md md:text-lg">
-            Flexible timings to suit the needs of the students.
-          </p>
-        </div>
-        <div className="flex flex-col gap-3 items-center text-center justify-around md:items-center md:justify-between">
-          <img src={Avatars} alt="avatar" className="w-10" />
-          <p className="text-white text-md md:text-lg">
-            Training provided by well-experienced trainers.
-          </p>
-        </div>
+          <div className="flex flex-col gap-3 text-center justify-around md:justify-between md:text-start">
+            <h2 className="text-white font-bold text-xl md:text-4xl">Why choose Us</h2>
+            <p className="text-white text-md md:text-lg text-center md:text-start">
+              Our training programs are designed to provide comprehensive and
+              up-to-date knowledge in various software domains.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 items-center text-center justify-around md:items-center md:justify-between">
+            <img src={BookIcon} alt="book" className="w-10" />
+            <p className="text-white text-md md:text-lg">
+              Gain hands-on experience with real-world projects
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 items-center text-center justify-around md:items-center md:justify-between">
+            <img src={Clock} alt="clock" className="w-10" />
+            <p className="text-white text-md md:text-lg">
+              Personalized timetables to suit student requirements.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 items-center text-center justify-around md:items-center md:justify-between">
+            <img src={Avatars} alt="avatar" className="w-10" />
+            <p className="text-white text-md md:text-lg">
+              Receive career placement assistance and guidance & earn a
+              certificate upon successful completion
+            </p>
+          </div>
         </Fade>
       </div>
     </div>
