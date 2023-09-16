@@ -3,6 +3,7 @@ import img1 from "../../assets/AboutS11.svg";
 import img2 from "../../assets/AboutS12.svg";
 import img3 from "../../assets/AboutS13.svg";
 import { Fade } from "react-reveal";
+import Counter from "./Counter";
 
 const AboutSectionOne = () => {
   return (
@@ -53,19 +54,19 @@ const AboutSectionOne = () => {
         <div className="bg-app-color flex flex-col md:flex-row gap-5 w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
           <Fade bottom>
             <div className="flex flex-col items-center">
-                <h2 className="font-bold text-white text-4xl">10+</h2>
+                <h2 className="font-bold flex text-white text-4xl"><Counter num={10} />+</h2>
                 <p className="text-white">Courses</p>
             </div>
             <div className="flex flex-col items-center">
-                <h2 className="font-bold text-white text-4xl">30+</h2>
+                <h2 className="font-bold flex text-white text-4xl"><Counter num={30} />+</h2>
                 <p className="text-white">Placements</p>
             </div>
             <div className="flex flex-col items-center">
-                <h2 className="font-bold text-white text-4xl">100%</h2>
+                <h2 className="font-bold flex text-white text-4xl"><Counter num={100} />%</h2>
                 <p className="text-white">Guaranteed</p>
             </div>
             <div className="flex flex-col items-center">
-                <h2 className="font-bold text-white text-4xl">10+</h2>
+                <h2 className="font-bold flex text-white text-4xl"><Counter num={10} />+</h2>
                 <p className="text-white">Courses</p>
             </div>
           </Fade>
