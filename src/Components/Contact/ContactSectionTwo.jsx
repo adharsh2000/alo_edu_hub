@@ -14,7 +14,7 @@ const ContactSectionTwo = () => {
           <h2 className="font-bold text-lg"> FOLLOW OUR SOCIALS </h2>
           <div className="flex gap-4">
             <Link
-              to="https://www.facebook.com/profile.php?id=61551218908619&mibextid=ZbWKwL"
+              to="https://www.facebook.com/profile.php?id=61551440452176&mibextid=nW3QTL"
               target="_blank"
             >
               <img src={S1} alt="facebook" />

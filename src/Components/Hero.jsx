@@ -8,8 +8,10 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
+    <>
+    <div className="h-20"></div>
     <div className="mb-10">
-      <main className="md:h-[550px] flex flex-col-reverse md:flex-row">
+      <main className="md:h-[550px] flex flex-col-reverse md:flex-row md:px-16">
         {/* <img src={HeroImg} alt="" /> */}
         <div
           style={{ backgroundImage: `url(${CircularOne})` }}
@@ -79,6 +81,7 @@ const Hero = () => {
         </Fade>
       </div>
     </div>
+    </>
   );
 };
 

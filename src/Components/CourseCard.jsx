@@ -15,7 +15,7 @@ const CourseCard = ({ Heading, content, img ,period }) => {
           <img src={Rating} alt="rating" />
         </div>
         {
-          content ? <p className="text-[10px] text-gray-500 mt-2">{content}</p> : <div className="mt-2 h-4"></div>
+          content ? <p className="text-[13px] text-gray-500 mt-2">{content}</p> : <div className="mt-2 h-4"></div>
         }
         <div className="border-dotted border-2 border-gray-400 mt-2"></div>
         {

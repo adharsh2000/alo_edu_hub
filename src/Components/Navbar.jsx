@@ -63,7 +63,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex py-4 px-10 items-center shadow-md">
+      <div className="fixed flex py-4 px-10 items-center shadow-md w-full z-30 bg-white">
         <img className="w-20 md:w-28" src={Logo} alt="logo" />
         <ul
           className={`ml-auto md:flex md:justify-end ${

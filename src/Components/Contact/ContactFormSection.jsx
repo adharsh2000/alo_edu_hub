@@ -1,26 +1,26 @@
-import  { useState } from 'react';
-import Map from '../../assets/Map.svg';
-import { Fade } from 'react-reveal';
-import axios from 'axios';
-import { toast } from 'react-toastify';
+import { useState } from "react";
+// import Map from "../../assets/Map.svg";
+import { Fade } from "react-reveal";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const ContactFormSection = () => {
   // Initialize form data state
   const initialFormState = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    summary: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    summary: "",
     errors: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      summary: '',
+      firstName: "",
+      lastName: "",
+      email: "",
+      summary: "",
     },
   };
 
-  const url = "http://ec2-3-108-250-187.ap-south-1.compute.amazonaws.com:5000/api/email/send";
-
+  const url =
+    "http://ec2-3-108-250-187.ap-south-1.compute.amazonaws.com:5000/api/email/send";
 
   // Use state for form data
   const [formData, setFormData] = useState(initialFormState);
@@ -28,28 +28,28 @@ const ContactFormSection = () => {
   // Validation function
   const validateField = (fieldName, value) => {
     switch (fieldName) {
-      case 'firstName':
-        if (value.trim() === '') {
-          return 'First name is required';
+      case "firstName":
+        if (value.trim() === "") {
+          return "First name is required";
         }
-        return '';
-      case 'lastName':
-        if (value.trim() === '') {
-          return 'Last name is required';
+        return "";
+      case "lastName":
+        if (value.trim() === "") {
+          return "Last name is required";
         }
-        return '';
-      case 'email':
+        return "";
+      case "email":
         if (!value.match(/^\S+@\S+\.\S+$/)) {
-          return 'Invalid email address';
+          return "Invalid email address";
         }
-        return '';
-      case 'summary':
-        if (value.trim() === '') {
-          return 'Summary is required';
+        return "";
+      case "summary":
+        if (value.trim() === "") {
+          return "Summary is required";
         }
-        return '';
+        return "";
       default:
-        return '';
+        return "";
     }
   };
 
@@ -78,13 +78,13 @@ const ContactFormSection = () => {
     // Validate all fields
     const errors = {};
     Object.keys(formData).forEach((fieldName) => {
-      if (fieldName !== 'errors') {
+      if (fieldName !== "errors") {
         errors[fieldName] = validateField(fieldName, formData[fieldName]);
       }
     });
 
     // Check if any errors exist
-    if (Object.values(errors).some((error) => error !== '')) {
+    if (Object.values(errors).some((error) => error !== "")) {
       setFormData((prevData) => ({
         ...prevData,
         errors,
@@ -92,17 +92,18 @@ const ContactFormSection = () => {
     } else {
       // Form is valid, you can submit data or perform actions here
       // Reset the form after successful submission
-      const Data = {...formData,type:"AloGroups"}
+      const Data = { ...formData, type: "AloGroups" };
       console.log(Data);
-      axios.post(url,Data)
-        .then(({data})=>{
-          console.log("sender",data);
+      axios
+        .post(url, Data)
+        .then(({ data }) => {
+          console.log("sender", data);
           toast.success("Form Submitted Successfully..");
         })
         .catch((err) => {
-          console.log('Error', err)
-          toast.error('Form Submition Faild..')
-        })
+          console.log("Error", err);
+          toast.error("Form Submition Faild..");
+        });
       setFormData(initialFormState);
     }
   };
@@ -111,10 +112,14 @@ const ContactFormSection = () => {
     <div className="flex flex-col md:flex-row p-10 justify-evenly">
       <div className="md:w-[40%] ">
         <Fade bottom>
-          <form action="" className="flex flex-col gap-2" onSubmit={handleSubmit}>
+          <form
+            action=""
+            className="flex flex-col gap-2"
+            onSubmit={handleSubmit}
+          >
             {/* First Name */}
             <div className="flex flex-col p-1">
-              <label htmlFor="firstName" className="mb-4">
+              <label htmlFor="firstName" className="mb-1">
                 First Name
               </label>
               <input
@@ -122,7 +127,7 @@ const ContactFormSection = () => {
                 id="firstName"
                 name="firstName"
                 className={`border-2 border-[#8A8A8A] p-1 outline-none ${
-                  formData.errors.firstName ? 'border-red-500' : ''
+                  formData.errors.firstName ? "border-red-500" : ""
                 }`}
                 value={formData.firstName}
                 onChange={handleInputChange}
@@ -134,7 +139,7 @@ const ContactFormSection = () => {
 
             {/* Last Name */}
             <div className="flex flex-col p-1">
-              <label htmlFor="lastName" className="mb-4">
+              <label htmlFor="lastName" className="mb-1">
                 Last Name
               </label>
               <input
@@ -142,7 +147,7 @@ const ContactFormSection = () => {
                 id="lastName"
                 name="lastName"
                 className={`border-2 border-[#8A8A8A] p-1 outline-none ${
-                  formData.errors.lastName ? 'border-red-500' : ''
+                  formData.errors.lastName ? "border-red-500" : ""
                 }`}
                 value={formData.lastName}
                 onChange={handleInputChange}
@@ -154,7 +159,7 @@ const ContactFormSection = () => {
 
             {/* Email */}
             <div className="flex flex-col p-1">
-              <label htmlFor="email" className="mb-4">
+              <label htmlFor="email" className="mb-1">
                 E-Mail
               </label>
               <input
@@ -162,7 +167,7 @@ const ContactFormSection = () => {
                 id="email"
                 name="email"
                 className={`border-2 border-[#8A8A8A] p-1 outline-none ${
-                  formData.errors.email ? 'border-red-500' : ''
+                  formData.errors.email ? "border-red-500" : ""
                 }`}
                 value={formData.email}
                 onChange={handleInputChange}
@@ -174,7 +179,7 @@ const ContactFormSection = () => {
 
             {/* Message */}
             <div className="flex flex-col p-1">
-              <label htmlFor="message" className="mb-4">
+              <label htmlFor="message" className="mb-1">
                 Leave a Message
               </label>
               <textarea
@@ -183,7 +188,7 @@ const ContactFormSection = () => {
                 cols="30"
                 rows="7"
                 className={`border-2 border-[#8A8A8A] p-1 outline-none ${
-                  formData.errors.summary ? 'border-red-500' : ''
+                  formData.errors.summary ? "border-red-500" : ""
                 }`}
                 value={formData.summary}
                 onChange={handleInputChange}
@@ -205,7 +210,17 @@ const ContactFormSection = () => {
 
       <div className="mt-8 md:w-[40%] md:mt-0">
         <Fade bottom>
-          <img src={Map} alt="map" />
+          {/* <img src={Map} alt="map" /> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.285749575487!2d77.42910427468932!3d8.173940991857155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f1405923e1fb%3A0xdded763ce70bbd4d!2sALO%20Groups!5e0!3m2!1sen!2sin!4v1695014535526!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            // style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+          ></iframe>
         </Fade>
       </div>
     </div>

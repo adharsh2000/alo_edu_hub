@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row mt-3 items-center justify-between px-6 gap-3 pb-5 md:pb-0">
         <h3 className="text-app-color order-2 md:order-1">
           <Link className="mr-1" to="mailto:aloeducationalhub@gmail.com">
-            Alohub@2023
+            Alogroups@2023
           </Link>
           All rights reserved.
         </h3>
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="flex gap-6 order-3">
           <Link
-            to="https://www.facebook.com/profile.php?id=61551218908619&mibextid=ZbWKwL"
+            to="https://www.facebook.com/profile.php?id=61551440452176&mibextid=nW3QTL"
             target="_blank"
           >
             <img src={S1} alt="facebook" />

@@ -13,9 +13,9 @@ const AboutSectionTwo = () => {
           </p>
         </Fade>
       </div>
-      <div className="w-[80%] flex flex-col md:flex-row md:justify-center gap-10 mt-9 mx-auto">
+      <div className="w-[80%] flex flex-col md:flex-row md:justify-around mt-9 mx-auto gap-9 md:gap-2">
         <Fade bottom>
-          <div className="md:w-[50%] flex flex-col items-center justify-center">
+          <div className="md:w-[60%] flex flex-col items-center justify-center">
             <p className="text-center md:text-start mb-6 text-gray-500">
               At Alo Educational Hub, we are passionate about creating a
               positive and enriching learning experience for our students. We
@@ -34,7 +34,7 @@ const AboutSectionTwo = () => {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <img src={img1} alt="img" className="w-80" />
+            <img src={img1} alt="img" className="w-[380px]" />
           </div>
         </Fade>
       </div>

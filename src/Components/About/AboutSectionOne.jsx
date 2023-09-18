@@ -24,16 +24,16 @@ const AboutSectionOne = () => {
         className="inline-block absolute right-2 -top-4 md:-top-3"
       />
       <div className="flex justify-center mt-7">
-        <div className="flex flex-col items-center md:flex-row md:w-[80%] md:justify-center gap-10">
+        <div className="flex flex-col items-center md:flex-row md:w-[80%] md:justify-around gap-9 md:gap-2">
           <Fade bottom>
-            <div className="w-80">
+            <div className="w-96">
               <img src={img1} alt="person" className="mb-3 w-[380px]" />
               <div className="flex">
-                <img src={img2} alt="person" className="w-[180px] mr-4" />
-                <img src={img3} alt="person" className="w-[120px]" />
+                <img src={img2} alt="person" className="w-[220px] mr-4" />
+                <img src={img3} alt="person" className="w-[143px]" />
               </div>
             </div>
-            <div className="w-96 md:w-[50%] flex flex-col justify-center">
+            <div className="w-96 md:w-[60%] flex flex-col justify-center">
               <p className="text-center md:text-start mb-6 text-gray-500">
                 At Alo Hub, we specialize in providing outstanding software
                 development training to individuals seeking to enhance their
@@ -53,7 +53,7 @@ const AboutSectionOne = () => {
           </Fade>
         </div>
       </div>
-      <div className="bg-app-color flex flex-col md:flex-row gap-5 w-[90%] md:w-[70%] mt-10 p-5 rounded-xl justify-around">
+      <div className="bg-app-color flex flex-col md:flex-row gap-5 w-[90%] md:w-[80%] mt-10 p-5 rounded-xl justify-around">
         <Fade bottom>
           <div className="flex flex-col items-center">
             <h2 className="font-bold flex text-white text-4xl">
