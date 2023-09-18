@@ -64,7 +64,7 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed flex py-4 px-10 items-center shadow-md w-full z-30 bg-white">
-        <img className="w-20 md:w-28" src={Logo} alt="logo" />
+        <img className="w-24 md:w-32" src={Logo} alt="logo" />
         <ul
           className={`ml-auto md:flex md:justify-end ${
             nav ? "hidden" : "hidden"
@@ -74,6 +74,9 @@ const Navbar = () => {
             <Link
               to="/"
               className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               Home
             </Link>
@@ -82,14 +85,20 @@ const Navbar = () => {
             <Link
               to="/about"
               className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
-              About
+              About Us
             </Link>
           </li>
           <li>
             <Link
               to="/faq"
               className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               FAQ
             </Link>
@@ -98,8 +107,11 @@ const Navbar = () => {
             <Link
               to="/contact"
               className="text-md font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
-              Contact
+              Contact Us
             </Link>
           </li>
         </ul>
@@ -126,6 +138,9 @@ const Navbar = () => {
             <Link
               to="/"
               className="font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               Home
             </Link>
@@ -135,6 +150,9 @@ const Navbar = () => {
             <Link
               to="/about"
               className="font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               About
             </Link>
@@ -144,6 +162,9 @@ const Navbar = () => {
             <Link
               to="/faq"
               className="font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               FAQ
             </Link>
@@ -153,6 +174,9 @@ const Navbar = () => {
             <Link
               to="/contact"
               className="font-bold hover:text-sky-500 focus:text-sky-500"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               Contact
             </Link>

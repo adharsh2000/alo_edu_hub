@@ -28,23 +28,31 @@ const Footer = () => {
       <div className="border border-app-color mt-4"></div>
       <div className="flex flex-col md:flex-row mt-3 items-center justify-between px-6 gap-3 pb-5 md:pb-0">
         <h3 className="text-app-color order-2 md:order-1">
-          <Link className="mr-1" to="mailto:aloeducationalhub@gmail.com">
+          <Link className="mr-1" to="https://www.alogroups.com/#/home">
             Alogroups@2023
           </Link>
           All rights reserved.
         </h3>
         <div className="flex gap-4 md:mr-24 order-1 md:order-2">
-          <Link to="/" className="text-app-color font-bold">
+          <Link to="/" className="text-app-color font-bold" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
             Home
           </Link>
-          <Link to="/about" className="text-app-color font-bold">
-            About
+          <Link to="/about" className="text-app-color font-bold" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
+            About Us
           </Link>
-          <Link to="/faq" className="text-app-color font-bold">
+          <Link to="/faq" className="text-app-color font-bold" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
             Faq
           </Link>
-          <Link to="/contact" className="text-app-color font-bold">
-            Contact
+          <Link to="/contact" className="text-app-color font-bold" onClick={() => {
+                window.scrollTo(0, 0);
+              }}>
+            Contact Us
           </Link>
         </div>
         <div className="flex gap-6 order-3">

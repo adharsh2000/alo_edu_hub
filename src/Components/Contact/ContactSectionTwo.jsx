@@ -43,11 +43,12 @@ const ContactSectionTwo = () => {
           <h2 className="font-bold text-lg">Connect with us</h2>
           <div className="flex gap-2">
             <img src={Phone} alt="Phone" />
-            <h4>+(91) 739-585-0903</h4>
+            <h4>+(91) 999-472-5508</h4>
           </div>
+          <h4>+(91) 739-585-0903</h4>
           <div className="flex gap-2">
             <img src={Mail} alt="Mail" />
-            <h4>contact@alogroups.com</h4>
+            <h4><Link to="mailto:contact@aloeducationalhub.com">contact@aloeducationalhub.com</Link></h4>
           </div>
         </Fade>
       </div>

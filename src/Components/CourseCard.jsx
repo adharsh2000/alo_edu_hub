@@ -1,11 +1,12 @@
 import Rating from "../assets/Rating.svg";
-import Period from "../assets/Period.svg";
-import Period2 from "../assets/Period2.svg";
+// import Period from "../assets/Period.svg";
+// import Period2 from "../assets/Period2.svg";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
+import clock from "../assets/PeriodNew.svg";
 
 /* eslint-disable react/prop-types */
-const CourseCard = ({ Heading, content, img ,period }) => {
+const CourseCard = ({ Heading, content, img, period, internship }) => {
   return (
     <Fade bottom>
       <div className="bg-white rounded-xl shadow-app-shadow p-3 relative mb-10 w-96">
@@ -14,13 +15,20 @@ const CourseCard = ({ Heading, content, img ,period }) => {
           <h3 className="font-bold">{Heading}</h3>
           <img src={Rating} alt="rating" />
         </div>
-        {
-          content ? <p className="text-[13px] text-gray-500 mt-2">{content}</p> : <div className="mt-2 h-4"></div>
-        }
+        {content ? (
+          <p className="text-[13px] text-gray-500 mt-2">{content}</p>
+        ) : (
+          <div className="mt-2 h-4"></div>
+        )}
         <div className="border-dotted border-2 border-gray-400 mt-2"></div>
-        {
+        <div className="mt-2 flex text-gray-400 text-sm mb-3 gap-2">
+          <img src={clock} alt="clock" />
+          <span>{`${period} Months `}</span>
+          {internship && <span>{` + ${internship} Month Internship`}</span>}
+        </div>
+        {/* {
           period === 3 ?  <img src={Period} alt="period" className="mt-2" /> : <img src={Period2} alt="period" className="mt-2" />
-        }
+        } */}
         <Link to="/getstarted">
           <button className="bg-app-color py-2 px-4 rounded-full text-white absolute -bottom-5 left-[50%] -translate-x-[50%]">
             Join Course

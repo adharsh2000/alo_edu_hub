@@ -26,6 +26,7 @@ const Home = () => {
               content={item.courseDesc}
               img={item.courseImage}
               period={item.period}
+              internship={item.internship}
             />
           ))}
         </div>
