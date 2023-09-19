@@ -44,7 +44,7 @@ export const studentCardData = [
     {
         img: "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png",
         name: "Anjali Srivatsava P",
-        position: "Node.js Deve;oper",
+        position: "Node.js Developer",
         desc: "I had a great learning experience with ALO EDUCATIONAL HUB's Node.js course. The course not only provided a solid foundation in Node.js but also covered important frameworks and tools. I had some prior experience with JavaScript, but this course helped me understand the nuances of Node.js development. I'm grateful for the knowledge I gained. Thank you, ALO. ",
     },
     {

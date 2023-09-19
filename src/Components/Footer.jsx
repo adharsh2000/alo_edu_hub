@@ -47,7 +47,7 @@ const Footer = () => {
           <Link to="/faq" className="text-app-color font-bold" onClick={() => {
                 window.scrollTo(0, 0);
               }}>
-            Faq
+            FAQ
           </Link>
           <Link to="/contact" className="text-app-color font-bold" onClick={() => {
                 window.scrollTo(0, 0);

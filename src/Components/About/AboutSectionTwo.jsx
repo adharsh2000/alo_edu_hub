@@ -6,7 +6,7 @@ const AboutSectionTwo = () => {
     <div className="flex flex-col items-center justify-center mb-5 mt-8">
       <div>
         <Fade bottom>
-          <h2 className="font-bold text-3xl text-center mb-5">Our MIssion</h2>
+          <h2 className="font-bold text-3xl text-center mb-5">Our Mission</h2>
           <p className="text-gray-500 mx-auto text-center ">
             Empowering students with innovative software skills for career
             success
